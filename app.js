@@ -12,17 +12,17 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
 
         .state('form.profile', {
             url: '/profile',
-            template: 'form-profile.html'
+            templateUrl: 'form-profile.html'
         })
 
         .state('form.interests', {
             url: '/interests',
-            template: 'form-interests.html'
+            templateUrl: 'form-interests.html'
         })
 
         .state('form.payment', {
             url: '/payment',
-            template: 'form-payment.html'
+            templateUrl: 'form-payment.html'
         });
 
     $urlRouterProvider.otherwise('/form/profile')
