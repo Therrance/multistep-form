@@ -6,7 +6,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
 
         .state('form', {
             url: '/form',
-            template: 'form.html',
+            templateUrl: 'form.html',
             controller: 'formController'
         })
 
@@ -23,7 +23,9 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
         .state('form.payment', {
             url: '/payment',
             template: 'form-payment.html'
-        })
+        });
+
+    $urlRouterProvider.otherwise('/form/profile')
 
 })
 
